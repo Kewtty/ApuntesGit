@@ -1,0 +1,35 @@
+📌 CLASE 4: GITHUB
+⚙️ Diferencias entre Git y GitHub
+Git: Sistema de control de versiones local, guarda y gestiona cambios en tu computadora.
+
+GitHub: Es una plataforma en línea que aloja repositorios Git y permite colaborar con otros.
+
+⚙️ ¿Qué es un repositorio remoto?
+Es una versión en la nube de tu repositorio local. Permite subir, compartir y trabajar en equipo desde diferentes lugares.
+
+⚙️ ¿Qué contiene GitHub?
+Archivos del proyecto.
+
+Historial de commits.
+
+Ramas.
+
+Pull Requests.
+
+Issues (problemas/tareas).
+
+Wiki, Releases, Settings, etc.
+
+⚙️ Clonar un repositorio
+Copia un repo remoto a tu computadora:
+
+	git clone URL-del-repo
+
+⚙️ Crear rama remota
+1. Crear rama local:
+
+	git checkout -b nombre-rama
+
+2. Subir al remoto:
+
+	git push -u origin nombre-rama
