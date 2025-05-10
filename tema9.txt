@@ -1,0 +1,40 @@
+📌 TEMA 9: HOOKS, ALIAS Y TRUCOS DE GIT
+
+⚙️ ¿Qué es un hook en Git?
+Son scripts automáticos que Git ejecuta antes o después de ciertos eventos (ej: commit, push, merge). Sirven para automatizar tareas como validaciones, pruebas o formateo de código.
+
+⚙️ ¿Dónde están los hooks?
+En la carpeta .git/hooks/ del repositorio.
+Vienen ejemplos por defecto (pre-commit.sample).
+
+📌 Para crear uno:
+
+- Ve a .git/hooks/
+- Renombra pre-commit.sample a pre-commit
+- Agrega tu script (ej. Bash o Python)
+- Dale permisos de ejecución:
+
+	chmod +x pre-commit
+
+⚙️ Alias en Git
+Permiten crear atajos para comandos largos o frecuentes.
+📌 Ejemplos:
+
+	git config --global alias.st status
+	git config --global alias.cm "commit -m"
+	git config --global alias.lg "log --oneline --graph --all"
+Ahora se puede usar:
+
+git st
+git cm "mensaje"
+git lg
+
+⚙️ Trucos útiles
+
+git log --oneline --graph: ver historial claro y visual.
+
+git diff: ver qué cambió antes de hacer commit.
+
+git stash: guarda temporalmente cambios sin hacer commit.
+
+git cherry-pick: copiar un commit específico a otra rama.
