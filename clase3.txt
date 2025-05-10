@@ -1,0 +1,56 @@
+📌 CLASE 3: RAMAS, MERGE Y CONFLICTOS
+⚙️ ¿Qué es una rama?
+Una rama en Git es una versión independiente de tu proyecto. Permite trabajar en cambios sin afectar la rama principal (master o main).
+
+⚙️ ¿Para qué sirve una rama?
+Las ramas permiten realizar trabajos aislados. Puedes desarrollar una nueva característica o corregir errores sin interferir con el código principal.
+
+⚙️ ¿Cómo se crea una rama?
+Para crear una nueva rama y cambiar a ella:
+
+bash
+Copiar
+Editar
+git checkout -b nombre-de-la-rama
+⚙️ Fusionar ramas (Merge)
+Para fusionar una rama en otra (generalmente desde una rama de características a la principal):
+
+bash
+Copiar
+Editar
+git checkout rama-principal
+git merge nombre-de-la-rama
+⚙️ Eliminar una rama
+Para eliminar una rama que ya no necesitas:
+
+bash
+Copiar
+Editar
+git branch -d nombre-de-la-rama
+Si no se ha fusionado, usa -D para forzar la eliminación.
+
+⚙️ Conflictos en Git
+Un conflicto ocurre cuando dos ramas modifican el mismo archivo en la misma parte del código. Git no puede fusionarlas automáticamente.
+
+⚙️ Soluciones a los conflictos
+Identificar el conflicto: Git marcará los archivos en conflicto.
+
+Resolver el conflicto: Edita los archivos para mantener los cambios correctos.
+
+Git marcará el conflicto con:
+
+bash
+Copiar
+Editar
+<<<<<<< HEAD
+(tu versión)
+=======
+(cambios de la otra rama)
+>>>>>>> nombre-de-la-rama
+Confirmar la resolución:
+
+bash
+Copiar
+Editar
+git add archivo-resuelto
+git commit -m "Resuelvo conflicto"
