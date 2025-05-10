@@ -1,0 +1,36 @@
+📌 CLASE 7: BUENAS PRÁCTICAS EN GIT
+⚙️ ¿Por qué seguir buenas prácticas?
+- Facilitan el trabajo en equipo.
+- Hacen más claro el historial de cambios.
+- Ayudan a identificar errores fácilmente.
+- Mejora la organización del proyecto.
+
+⚙️ ¿Cuándo hacer un commit?
+- Cada vez que completes un cambio lógico o funcional.
+- No acumules muchos cambios sin registrar.
+- No hagas commits muy pequeños sin sentido.
+
+⚙️ Cómo escribir buenos commits
+- Usa mensajes claros y descriptivos.
+- En presente y forma breve.
+- Usa prefijos si quieres organizar mejor:
+	- feat: nueva funcionalidad
+	- fix: corrección de error
+	- docs: solo documentación
+	- style: formato (espacios, sangrías)
+	- refactor: cambios internos sin cambiar funcionalidad
+	- test: pruebas
+	- chore: tareas menores (build, configs)
+
+📌 Ejemplo:
+
+	git commit -m "feat: agregar formulario de contacto"
+
+⚙️ NOMBRAR RAMAS CORRECTAMENTE
+Usa nombres cortos, claros y con guiones.
+Evita espacios y mayúsculas.
+Incluye el propósito de la rama:
+
+- feature/login
+- fix/validacion-formulario
+- hotfix/bug-header
