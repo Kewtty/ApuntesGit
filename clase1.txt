@@ -1,0 +1,33 @@
+📌 CLASE 1: INTRODUCCION A GIT
+-QUE ES GIT
+Es una herramienta que guarda versiones de tu proyecto (código).
+
+-QUE ES GIT BASH
+Es una consola para escribir comandos de Git en Windows.
+
+-QUE ES GITHUB
+Es una página web donde puedes subir tus proyectos Git y compartirlos.
+
+-INSTALACION
+1. Descarga Git desde git-scm.com.
+2. Instala y abre Git Bash.
+3. Verifica con git --version.
+
+-CREACION DE CUENTA DE GITHUB
+1. Ve a github.com y crea una cuenta gratis.
+2. Verifica tu correo.
+
+⚙️ CONFIGURADO GIT
+bash
+Copiar
+Editar
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@correo.com"
+📦 COMANDOS BÁSICOS
+bash
+Copiar
+Editar
+git init          # Inicia un repo
+git add archivo   # Añade cambios
+git commit -m "msg" # Guarda cambios
+git push          # Sube a GitHub
