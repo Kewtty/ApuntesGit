@@ -1,0 +1,47 @@
+📌 CLASE 2: STATES Y COMMITS
+⚙️*STATES O ESTADOS*
+	Git tiene tres estados principales para los archivos dentro de un repositorio:
+1. UNTRACKED (NO RASTREADO)
+Son archivos que Git no está siguiendo. Generalmente, son archivos nuevos que no han sido añadidos al repositorio.
+2. STAGED(PREPARADO)
+Archivos que han sido modificados y añadidos al área de staging con git add. Estos archivos están listos para ser incluidos en el siguiente commit.
+3. COMMITED
+Archivos que han sido guardados en el historial del repositorio mediante un commit. No se modifican hasta que se realice otro commit.
+
+⚙️*TIPOS DE COMMIT*
+1. COMMIT INICIAL
+El primer commit en un repositorio. Se crea cuando se inicializa el repositorio y se hace el primer cambio o archivo agregado.
+2. COMMIT NORMAL
+Cualquier commit posterior al primero, que guarda los cambios realizados hasta ese momento. Puedes agregar un mensaje que describa lo que hiciste en ese commit.
+3. COMMIT DE FUSION
+Se crea cuando dos ramas se combinan. Esto ocurre con un git merge o un git pull.  
+Generalmente, se guarda un mensaje de fusión para indicar que una rama ha sido combinada con otra.
+
+⚙️ ¿QUE ES UN COMMIT?
+Un commit es una instantánea del proyecto en un momento dado. Es como un punto de control en el que puedes volver si es necesario.
+
+Cada commit tiene un hash único que lo identifica.
+
+Los commits almacenan información sobre:
+
+Qué archivos se cambiaron.
+
+Qué cambios específicos se hicieron.
+
+Quién hizo el commit y cuándo.
+
+El mensaje del commit, que describe lo que se hizo.
+
+⚙️ HEAD EN GIT
+HEAD es un puntero especial que apunta al commit actual o activo en tu repositorio.
+
+Generalmente, HEAD apunta a la rama activa, por ejemplo, master o main.
+
+Cuando haces un commit, HEAD se mueve automáticamente al nuevo commit.
+
+Puedes cambiar HEAD para moverte entre diferentes ramas, revisando versiones anteriores de tu proyecto o haciendo una "reversa" de tus cambios.
+
+Ejemplo:
+Si HEAD apunta a master, eso significa que estás trabajando en la rama master.
+
+Si haces un checkout a una rama diferente, HEAD se moverá para apuntar a esa rama.
