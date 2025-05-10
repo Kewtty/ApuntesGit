@@ -1,0 +1,42 @@
+📌 TEMA 8: DESHACER CAMBIOS EN GIT
+
+⚙️ ¿Cuándo deshacer cambios?
+Cuando cometes un error.
+Cuando necesitas volver a una versión anterior.
+Cuando hiciste un commit que no debías.
+
+⚙️ Tipos de comandos
+✅ No destructivos (seguros)
+
+	git revert
+Crea un nuevo commit que revierte los cambios de un commit anterior.
+
+Conserva el historial.
+
+	git revert ID_del_commit
+	git checkout (modo archivo)
+
+Restaura un archivo específico desde el último commit.
+
+	git checkout -- archivo.txt
+
+⚠️ Destructivos (modifican el historial)
+
+	git reset
+
+Elimina commits o cambios, según el modo:
+
+--soft: conserva los cambios en staging.
+
+--mixed: conserva cambios en el working directory.
+
+--hard: borra todo (⚠️ peligroso).
+
+	git reset --hard ID_del_commit
+
+⚙️ Recomendaciones
+Usa revert si ya compartiste tus cambios con otros (repositorio remoto).
+Usa reset solo en repositorio local y con cuidado.
+Siempre verifica qué commit quieres modificar con:
+
+	git log --oneline
