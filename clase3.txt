@@ -8,25 +8,19 @@ Las ramas permiten realizar trabajos aislados. Puedes desarrollar una nueva cara
 ⚙️ ¿Cómo se crea una rama?
 Para crear una nueva rama y cambiar a ella:
 
-bash
-Copiar
-Editar
 git checkout -b nombre-de-la-rama
+
 ⚙️ Fusionar ramas (Merge)
 Para fusionar una rama en otra (generalmente desde una rama de características a la principal):
 
-bash
-Copiar
-Editar
 git checkout rama-principal
 git merge nombre-de-la-rama
+
 ⚙️ Eliminar una rama
 Para eliminar una rama que ya no necesitas:
 
-bash
-Copiar
-Editar
 git branch -d nombre-de-la-rama
+
 Si no se ha fusionado, usa -D para forzar la eliminación.
 
 ⚙️ Conflictos en Git
@@ -39,9 +33,6 @@ Resolver el conflicto: Edita los archivos para mantener los cambios correctos.
 
 Git marcará el conflicto con:
 
-bash
-Copiar
-Editar
 <<<<<<< HEAD
 (tu versión)
 =======
@@ -49,8 +40,5 @@ Editar
 >>>>>>> nombre-de-la-rama
 Confirmar la resolución:
 
-bash
-Copiar
-Editar
 git add archivo-resuelto
 git commit -m "Resuelvo conflicto"
