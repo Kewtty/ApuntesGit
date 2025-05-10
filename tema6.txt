@@ -1,0 +1,32 @@
+📌 CLASE 6: GITFLOW
+
+⚙️ ¿Qué es GitFlow?
+GitFlow es una estrategia para organizar el trabajo con ramas en Git. Ayuda a mantener orden en proyectos con varios desarrolladores y versiones.
+
+⚙️ Ramas principales
+
+main o master: Rama estable y lista para producción.
+
+develop: Rama donde se integra todo el desarrollo. Base para nuevas funciones.
+
+⚙️ Ramas secundarias
+- feature: Para nuevas funcionalidades.
+Se crean desde develop:
+
+	|git checkout -b feature/nueva-funcion develop
+
+Se fusionan a develop.
+
+- release: Preparación para una versión.
+
+Se crea desde develop, se corrigen errores, y se fusiona a main y develop.
+
+- hotfix: Correcciones urgentes en main.
+
+Se crea desde main, se corrige, y se fusiona a main y develop.
+
+⚙️ Ventajas de GitFlow
+Organización clara de fases del proyecto.
+Permite trabajo en equipo sin pisar cambios.
+Facilita la entrega de versiones estables y nuevas funciones.
+
