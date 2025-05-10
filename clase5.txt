@@ -1,0 +1,14 @@
+📌 CLASE 5: PUSH, PULL Y PULL REQUEST
+⚙️ git push
+Sube tus cambios locales al repositorio remoto (GitHub).
+
+	git push origin nombrederama
+
+⚙️ git pull
+Descarga cambios del repositorio remoto y los fusiona con tu rama actual.
+
+	git pull origin acaelnombrederama
+
+⚙️ Pull Request (PR)
+--En GitHub, sirve para proponer cambios de una rama a otra (ej. de tu rama a main).
+--Se revisa, comenta y aprueba antes de fusionar.
